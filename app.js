@@ -1,13 +1,14 @@
 const express = require('express');
-const handlebars = require('express-handlebars');
+const ejs = require('ejs');
 const path = require('path');
 
 const app = express();
 
-//Configuración
+//Configuración de la aplicación
 const port = process.env.PORT || 3000;
 app.set('port', port);
 app.set('views', path.join(__dirname, 'views'));
+
 //Middleware
 
 //Rutas
