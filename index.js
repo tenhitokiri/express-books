@@ -1,4 +1,4 @@
-const app = require('./app');
+const app = require('./src/app');
 
 //conexión asincrona para levantar el servidor
 async function main() {
