@@ -2,6 +2,7 @@ const express = require('express');
 const ejs = require('ejs');
 const path = require('path');
 const morgan = require('morgan');
+//const bootstrap = require('bootstrap');
 
 const app = express();
 
@@ -13,7 +14,9 @@ app.set('view engine', 'ejs');
 
 //Middleware
 app.use(morgan('dev'));
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({
+	extended: false
+}));
 
 //Rutas
 app.use(require('./routes/index'));
